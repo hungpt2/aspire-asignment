@@ -1,5 +1,5 @@
-import { IAuthState } from '@/store/auth';
+import { ICommonState } from '@/store/common';
 
 export interface IAppState {
-  auth: IAuthState;
+  common: ICommonState;
 }

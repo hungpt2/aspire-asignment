@@ -1,7 +1,5 @@
-import { IUserInfo } from '@/shared/models/user';
-
 export interface ILoginInfo {
-  profile: IUserInfo;
+  profile: any;
   token: string;
 }
 

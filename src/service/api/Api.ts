@@ -1,19 +1,19 @@
 import { ApiErrorInterceptor } from '@/shared/models';
 import HttpActions from './config/HttpActions';
-import AuthApi from './auth';
+import CommonApi from './common';
 
 export default class Api {
-  public auth: AuthApi;
+  public common: CommonApi;
   private actions: HttpActions;
   private errorInterceptors: ApiErrorInterceptor[] = [];
 
   constructor() {
-    this.actions = new HttpActions('admin/v1/', this.errorInterceptors);
-    this.auth = new AuthApi(this.actions);
+    this.actions = new HttpActions('base-here/', this.errorInterceptors);
+    this.common = new CommonApi(this.actions);
   }
 }
 
 export interface IApi {
-  auth: AuthApi;
+  common: CommonApi;
 }
 

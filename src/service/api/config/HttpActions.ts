@@ -20,8 +20,8 @@ export default class HttpActions {
     };
     this.request = axios.create(config);
     this.request.interceptors.response.use(
-      response => response,
-      error => {
+      (response: any) => response,
+      (error: any) => {
         if (error.response) {
           // handle logout infinity loop
           const {

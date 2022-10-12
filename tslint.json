@@ -43,38 +43,6 @@
       "error",
       "always"
     ],
-    "comment-format": [
-      true,
-      "check-space"
-    ],
-    "indent": [
-      false,
-      "spaces"
-    ],
-    "ter-indent": [
-      "error",
-      2
-    ],
-    "object-curly-spacing": [
-      "error",
-      "always"
-    ],
-    "comment-format": [
-      true,
-      "check-space"
-    ],
-    "indent": [
-      false,
-      "spaces"
-    ],
-    "ter-indent": [
-      "error",
-      2
-    ],
-    "object-curly-spacing": [
-      "error",
-      "always"
-    ],
     "no-eval": true,
     "no-internal-module": true,
     "no-trailing-whitespace": true,
@@ -101,11 +69,6 @@
     "no-empty": [
       true,
       "allow-empty-functions"
-    ],
-    "one-line": [
-      true,
-      "check-open-brace",
-      "check-whitespace"
     ],
     "typedef-whitespace": [
       true,

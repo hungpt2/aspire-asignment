@@ -1,5 +1,5 @@
 ## Node version
-10.17.0
+16.9.0
 
 ## Project setup
 ```

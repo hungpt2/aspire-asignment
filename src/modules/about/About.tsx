@@ -13,7 +13,7 @@ export default class About extends Vue {
   protected render() {
     return (
       <a-card-custom loading={this.isLoading}>
-        <div className="about">
+        <div class="about">
           <h1>Click the Button to view the magic</h1>
           <a-button on-click={() => this.onBtnClick('info')}>Info button</a-button>
           <a-button on-click={() => this.onBtnClick('error')}>Error button</a-button>
