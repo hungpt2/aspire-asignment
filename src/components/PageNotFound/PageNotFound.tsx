@@ -8,7 +8,7 @@ import './PageNotFound.scss';
 export default class PageNotFound extends Vue {
   protected render() {
     return (
-      <div style={{ background: '#f0f2f5', marginTop: '-20px' }}>
+      <div>
         <div class="wscn-http404">
           <div class="bullshit">
             <div class="bullshit__oops">NOT FOUND!</div>

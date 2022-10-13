@@ -9,10 +9,7 @@ import './App.scss';
 export default class App extends Vue {
   protected render() {
     return (
-      <div>
-        <div>sidebar</div>
-        <router-view/>
-      </div>
+      <router-view/>
     );
   }
 }

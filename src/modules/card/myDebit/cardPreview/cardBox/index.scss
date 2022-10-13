@@ -1,0 +1,125 @@
+.card-box {
+  width: 100%;
+  padding-top: 61%;
+  position: absolute;
+  margin-top: 30px;
+
+  &__wrapper {
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 6%;
+    display: flex;
+    flex-flow: column;
+  }
+
+  &__show-number {
+    display: flex;
+    justify-content: flex-end;
+    position: absolute;
+    top: -30px;
+    right: 0;
+    cursor: pointer;
+
+    &__wrapper {
+      height: 40px;
+      border-radius: 6px 6px 0 0;
+      background-color: #fff;
+      padding: 6px 10px 16px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &--icon {
+      margin-right: 6px;
+    }
+    &--label {
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 18px;
+    }
+  }
+
+  &__info {
+    flex: 1;
+    display: flex;
+    flex-flow: column;
+
+    & > div {
+      flex: 1;
+    }
+
+    &--name {
+      display: flex;
+      align-items: center;
+      font-size: 22pt;
+      font-weight: 700;
+      color: #FFF;
+      letter-spacing: 0.53pt;
+    }
+
+    &-group {
+      display: flex;
+      flex-flow: column;
+
+      & > div {
+        flex: 1;
+      }
+    }
+
+    &__card-number {
+      display: flex;
+      align-items: center;
+      font-size: 14pt;
+      font-weight: 700;
+      &--char {
+        margin-right: 6px;
+        color: #FFF;
+        &.spacing {
+          margin-right: 24px;
+        }
+        &.hide {
+          height: 8px;
+          width: 8px;
+          border-radius: 8px;
+          background-color: #FFF;
+        }
+      }
+    }
+
+    &__card-time {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+
+    &--cvv,
+    &--card-expired {
+      font-size: 13pt;
+      letter-spacing: 1.56pt;
+      font-weight: 700;
+      color: #FFF;
+    }
+  }
+
+  &__logo {
+    height: 10%;
+    color: #FFF;
+    text-align: right;
+    svg {
+      height: 100%;
+    }
+  }
+
+  &__visa {
+    height: 11%;
+    color: #FFF;
+    text-align: right;
+    svg {
+      height: 100%;
+    }
+  }
+}

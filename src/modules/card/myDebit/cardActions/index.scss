@@ -1,0 +1,38 @@
+.card-actions {
+  margin-top: 24px;
+  background-color: #EDF3FF;
+  border-radius: 16px 16px 0 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+
+  &__item {
+    width: 20%;
+
+    &--icon {
+      width: 32px;
+      height: 32px;
+      background-color: #325BAF;
+      border-radius: 32px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 7px;
+    }
+    &--label {
+      text-align: center;
+      font-size: 13pt;
+      font-weight: 400;
+      line-height: 14pt;
+      color: #0C365A;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    margin-top: 32px;
+    border-radius: 16px 16px 16px 16px;
+  }
+
+  @media only screen and (min-width: 1280px) {
+  }
+}

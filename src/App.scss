@@ -1,1 +1,10 @@
-// import shared/style here
+@import './shared/style/button';
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans',serif;
+  overflow: hidden;
+}

@@ -1,0 +1,77 @@
+.available-balance {
+  padding: 30px 24px 5px;
+  background-color: #0C365A;
+
+  &--label {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__value {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &--currency {
+      font-size: 12px;
+      font-weight: 700;
+      line-height: 16px;
+      padding: 2px 14px;
+      border-radius: 4px;
+      background-color: #01D167;
+      color: #fff;
+      margin-right: 10px;
+    }
+    &--amount {
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 2;
+      color: #fff;
+    }
+  }
+
+  &__action {
+    background-color: transparent;
+    color: #23CEFD;
+
+    &--icon {
+      color: #23CEFD;
+    }
+  }
+
+  @media only screen and (min-width: 992px) {
+    padding: 0;
+    background-color: #fff;
+
+    &--label {
+      font-weight: 400;
+      color: #222222;
+    }
+    &__info {
+      &--amount {
+        font-size: 26px;
+        line-height: 16px;
+        color: #222222;
+      }
+    }
+
+    &__action {
+      background-color: #325BAF;
+      color: #FFF;
+  
+      &--icon {
+        color: #FFF;
+      }
+    }
+
+  }
+}

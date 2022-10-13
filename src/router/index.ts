@@ -1,27 +1,23 @@
 import Vue from 'vue';
 import Router, { RouteConfig } from 'vue-router';
-// import authRoutes from '@/modules/auth/router';
+import cardRoutes from '@/modules/card/router';
+import homeRoutes from '@/modules/home/router';
+import paymentRoutes from '@/modules/payment/router';
+import creditRoutes from '@/modules/credit/router';
+import profileRoutes from '@/modules/profile/router';
 
 Vue.use(Router);
 
 const lazyRoutes: RouteConfig[] = [
-  // ...authRoutes,
+  ...profileRoutes,
+  ...creditRoutes,
+  ...paymentRoutes,
+  ...homeRoutes,
+  ...cardRoutes,
 ];
 
 const rootRoutes: RouteConfig[] = [
   ...lazyRoutes,
-  // {
-  //   path: '/about',
-  //   name: 'about',
-  //   component: () =>
-  //     import(/* webpackChunkName: 'about' */ '@/modules/about/About'),
-  // },
-  // {
-  //   path: '/home',
-  //   name: 'home',
-  //   component: () =>
-  //     import(/* webpackChunkName: 'home' */ '@/modules/home/Home'),
-  // },
   {
     path: '/',
     redirect: '/cards',
@@ -36,5 +32,5 @@ const rootRoutes: RouteConfig[] = [
 
 export const router = new Router({
   routes: rootRoutes,
-  mode: 'hash',
+  mode: 'history',
 });

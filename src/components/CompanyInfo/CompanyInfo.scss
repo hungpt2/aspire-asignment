@@ -1,0 +1,37 @@
+.company-info {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 16px 25px;
+  &--description {
+    display: none;
+  }
+  .logo {
+    display: none;
+    width: 125px;
+    height: 35px;
+  }
+  .logo-mini {
+    display: block;
+    color: #01D167;
+  }
+  @media only screen and (min-width: 992px) {
+    position: initial;
+    margin: 0 0 80px;
+    padding: 0 50px;
+    &--description {
+      display: block;
+      color: #55738C;
+      font-size: 15px;
+      line-height: 20px;
+      margin-top: 20px;
+    }
+    .logo {
+      display: block;
+      color: #01D167;
+    }
+    .logo-mini {
+      display: none;
+    }
+  }
+}

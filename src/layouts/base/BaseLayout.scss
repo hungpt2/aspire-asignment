@@ -1,0 +1,38 @@
+.base-layout {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+
+  &__sidebar {
+    width: 100%;
+    min-width: 340px;
+    height: 56px;
+    position: fixed;
+    bottom: 0;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    background-color: #ffffff;
+
+    @media only screen and (min-width: 992px) {
+      width: 340px;
+      box-shadow: none;
+      position: initial;
+      height: 100vh;
+      overflow: auto;
+      background-color: #0C365A;
+
+      -ms-overflow-style: none;  /* Internet Explorer 10+ */
+      scrollbar-width: none;  /* Firefox */
+      &::-webkit-scrollbar { 
+        display: none;  /* Safari and Chrome */
+      }
+    }
+  }
+
+  &__wrapper {
+    width: 100%;
+    overflow: auto;
+    @media only screen and (min-width: 992px) {
+      padding: 60px;
+    }
+  }
+}
